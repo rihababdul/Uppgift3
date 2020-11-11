@@ -13,7 +13,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int index = 0; //håller reda på antal studenter som finns i arrayen
 
-        while (true) {
+        boolean status = true;
+
+        while (status) {
             System.out.println("1) Lägg till student");
             System.out.println("2) Visa alla studenter");
             System.out.println("3) Ta bort student");
@@ -70,6 +72,11 @@ public class Main {
                         }
                     }
                 }
+            }
+
+            if(choice == 4)
+            {
+                status = false;
             }
         }
 
